@@ -1,0 +1,153 @@
+/* play-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+/* play-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+:root {
+  /* --color-brand-dark: #0fbb43; - тестовий колір для наглядності */
+
+  --color-brand-dark: #011c44;
+  --color-brand-light: #2b7fff;
+  --color-primary-dark: #000;
+  --color-primary-light: #fff;
+  --color-data-protekt: #747272;
+}
+
+/* Base*/
+body {
+  color: var(--color-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+ul {
+  list-style-type: none; /* прибрали крапочки у списках*/
+}
+
+address {
+  font-style: normal; /*за замовчуванням адреса йде курсивом*/
+}
+footer {
+  background-color: var(--color-brand-dark);
+}
+.button {
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  font-weight: 700; /*повинно бути 600. де його взять?*/
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+/*Title*/
+.hero-title {
+  font-family: 'Play';
+  font-weight: 700;
+  color: var(--color-brand-light);
+  text-transform: capitalize;
+  font-size: 140px;
+  line-height: 0.81;
+}
+.hero-text {
+  color: var(--color-primary-dark);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 64px;
+  font-family: 'Play';
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section-title .accent {
+  color: var(--color-brand-light);
+}
+
+.reincarnation-text {
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+.reincarnation-text .accent {
+  font-weight: 700; /*повинно бути 600. де його взять?*/
+}
+
+.advantages-text {
+  color: var(--color-primary-dark);
+  line-height: 1.33;
+  text-align: center;
+}
+
+/*Link */
+
+.link-for-us {
+  color: var(--color-brand-light); /*  пункт меню окремого кольору*/
+  text-decoration: none; /* прибрали підкреслення у пункта меню*/
+  font-weight: 700;
+}
+.link {
+  color: var(--color-brand-dark);
+  text-decoration: none; /* прибрали підкреслення у пункта меню*/
+}
+
+.link-for-us:hover {
+  text-decoration: underline; /* при наведенні на пункт меню виглядає як посилання*/
+}
+.link:hover {
+  text-decoration: underline; /* при наведенні на пункт меню виглядає як посилання*/
+}
+
+.link-footer {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link-footer:hover {
+  text-decoration: underline; /* при наведенні на пункт меню виглядає як посилання*/
+}
+
+.copyright-text {
+  color: var(--color-data-protekt);
+  font-size: 13px;
+}
