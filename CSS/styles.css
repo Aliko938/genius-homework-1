@@ -66,8 +66,12 @@ footer {
   color: var(--color-primary-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 32px;
-  font-weight: 700; /*повинно бути 600. де його взять?*/
+  font-weight: 600; /*повинно бути 600. де його взять?*/
   cursor: pointer;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21.09px;
+  text-align: left;
 }
 
 .button:hover {
@@ -101,6 +105,15 @@ footer {
 
 .section-title .accent {
   color: var(--color-brand-light);
+}
+
+.section-title-mask {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  /*color: var(--color-primary-light);* - так буде, коли напис буде на картинці. поки його не видно, бо колір білий*/
 }
 
 .reincarnation-text {
